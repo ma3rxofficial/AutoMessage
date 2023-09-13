@@ -3,7 +3,7 @@ import requests
 import ndjson
 import time
 
-def hack(token, users, msg, spammer_mode):
+def msg(token, users, msg, spammer_mode):
     heads = {'Authorization': f'Bearer {token}'}
 
     session = berserk.TokenSession(token)
@@ -29,5 +29,5 @@ def hack(token, users, msg, spammer_mode):
                 print(f"{user} sended!")
 
 if __name__ == "__main__":
-    hack(token=input("Напишите свой токен: "), users=input("Напишите список пользователей: "), spammer_mode=input("Включить spammer_mode?(y/N) "),
+    msg(token=input("Напишите свой токен: "), users=input("Напишите список пользователей: "), spammer_mode=input("Включить spammer_mode?(y/N) "),
          msg=input("Напишите сообшение, которое хотите отправить? "))
