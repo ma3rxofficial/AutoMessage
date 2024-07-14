@@ -30,4 +30,4 @@ def msg(token, users, msg, spammer_mode):
 
 if __name__ == "__main__":
     msg(token=input("Напишите свой токен: "), users=input("Напишите список пользователей: "), spammer_mode=input("Включить spammer_mode?(y/N) "),
-         msg=input("Напишите сообшение, которое хотите отправить? "))
+         msg=input("Напишите сообшение, которое хотите отправить: "))
